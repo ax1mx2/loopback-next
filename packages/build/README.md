@@ -138,14 +138,14 @@ We consider (console) logging from tests as a bad practice, because such logs
 usually clutter the test output and make it difficult to distinguish legitimate
 error messages from the noise.
 
-By default, `lb-mocha` detects when the tests and/or the application tested is
+By default, `lb-mocha` detects when the tests and/or the application tested have
 printed console logs and fails the test run with the following message:
 
 ```
 === ATTENTION - INVALID USAGE OF CONSOLE LOGS DETECTED ===
 ```
 
-If your need more information about behavior in the test, then the first choice
+If you need more information about behavior in the test, then the first choice
 should be to use a better or more descriptive error assertion. If that's not
 possible, then use debug statements to print additional information when
 explicitly requested.
